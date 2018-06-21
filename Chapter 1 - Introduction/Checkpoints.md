@@ -66,5 +66,24 @@ Disk size is usually measured in gigabytes or terabytes.
 Memory is volatile - any information stored in memory is lost once the system is powered off.
 Storage devices permanently store data and can transfer data to memory.
 
+*(Liang, p. 4)*
+
+
+## 1.10 What language does the CPU understand?
+
+## 1.11 What is an assembly language?
+
+## 1.12 What is an assembler?
+
+## 1.13 What is a high-level programming language?
+
+## 1.14 What is a source program?
+
+## 1.15 What is an interpreter?
+
+## 1.16 What is a compiler?
+
+## 1.17 What is the difference between an interpreted language and a compiled language?
+
 ## References
 Liang, Y. D. (2015).*Introduction to JAVA programming: Comprehensive version* (10th ed.). Upper Saddle River, NJ: Pearson/Prentice Hall.
