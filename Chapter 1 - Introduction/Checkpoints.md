@@ -217,7 +217,7 @@ A comment is text that help prgorammers to communicate and understand the progra
 A comment is ignored by the compiler because it is not a programming statement.
 
 A comment line is denoted by 2 slashes (//) before the commentary text
-A comment paragraph is denoted by /&ast before commentary text and &ast/ after commentary text.
+A comment paragraph is denoted by / &ast before commentary text and &ast / after commentary text.
 
 *(Liang, p. 13)*
 
@@ -248,7 +248,7 @@ The output is:
 
 ## 1.33 What is the Java source filename extension, and what is the Java bytecode filename extension?
 The Java source filename extension is **.java**.
-The Java bytecode filename extension is **.class**.
+The Java bytecode filename extension is **.class
 
 *(Liang, p. )*
 
