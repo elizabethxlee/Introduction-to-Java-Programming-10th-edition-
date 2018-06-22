@@ -248,47 +248,162 @@ The output is:
 
 ## 1.33 What is the Java source filename extension, and what is the Java bytecode filename extension?
 The Java source filename extension is **.java**.
-The Java bytecode filename extension is **.class
+The Java bytecode filename extension is **.class**
 
-*(Liang, p. )*
+*(Liang, p. 15)*
 
 
 ## 1.34 What are the input and output of a Java compiler?
-
-*(Liang, p. )*
+The input is a Java source file.
+The output is a Java bytecode file.
+*(Liang, p. 15)*
 
 
 ## 1.35 What is the command to compile a Java program?
+**javac className.java**
 
-*(Liang, p. )*
+*(Liang, p. 15)*
 
 
 ## 1.36 What is the command to run a Java program?
+**java className**
 
 *(Liang, p. )*
 
 
 ## 1.37 What is the JVM?
+Java Virtual Machine is an interpreter. Because it is a virtual machine rather than a physical machine, it allows you to interpret Java bytecode on a variety of hardware platforms and operating systems.
 
-*(Liang, p. )*
+*(Liang, p. 16)*
 
 
 ## 1.38 Can Java run on any machine? What is needed to run Java on a computer?
+Yes, Java can run on any machine with a JVM.
 
-*(Liang, p. )*
+*(Liang, p. 17)*
 
 
-## 1.39If a NoClassDefFoundError occurs when you run a program, what is the cause of
-the error?
+## 1.39 If a NoClassDefFoundError occurs when you run a program, what is the cause of the error?
+The cause of the error is: you execute a class file that does not exist.
 
-*(Liang, p. )*
+*(Liang, p. 17)*
 
 
 ## 1.40 If a NoSuchMethodError occurs when you run a program, what is the cause of the error?
+The cause of the error is: you execute a class file that does not have a main method.
 
-*(Liang, p. )*
+*(Liang, p. 17)*
 
 
+## 1.41 Reformat the following program according to the programming style and documentation guidelines. Use the end-of-line brace style.
+```Java
+public class Test 
+{
+  // Main method
+  public static void main(String[] args) { 
+  /** Display output */ 
+  System.out.println("Welcome to Java");
+  }
+}
+```
+Reformatted program
+```Java
+//This program prints out a phrase
+public class Test {
+  // Main method
+  public static void main(string[] args) { 
+    //Display output
+	System.out.println("Welcome to Java");
+  }
+}
+```
+
+*(Liang, p. 18-19)*
+
+
+## 1.42 What are syntax errors(compile errors), runtime errors, and logic errors?
+Syntax errors: errors that are detected by the compiler which result from code construction.
+*(Liang, p. 20)*
+
+Runtime errors: errors that cause a program to terminate abnormally which result from operations that are impossible to carry out
+*(Liang, p. 20)*
+
+Logic errors: errors that result from a program not performing the way it was intended to.
+*(Liang, p. 21)*
+
+
+## 1.43 Give examples of syntax errors, runtime errors, and logic errors.
+Syntax error - A closing quotation mark is missing 
+```
+public class ShowSyntaxErrors {
+  public static main(String[] args) {
+    System.out.println("Welcome to Java);
+  } 
+}
+```
+*(Liang, p. 20)*
+
+
+Runtime error - Division by zero is an impossible operation
+```
+public class ShowRuntimeErrors {
+  public static void main(String[] args) {
+    System.out.println(1 / 0);
+  } 
+}
+Run
+
+```
+*(Liang, p. 21)*
+
+
+Logic error - fractional portion of 9 / 5 is truncated, making the answer incorrect
+```
+public class ShowLogicErrors{
+	public static void main(String[] args){
+	System.out.println("Celsius 35 is Fahrenheit degree ");
+	System.out.rpintln((9 / 5) * 35 + 32);
+	}
+}
+```
+*(Liang, p. 21)*
+
+
+## 1.44 If you forget to put a closing quotation mark on a string, what kind of error will be raised?
+Syntax error
+
+*(Liang, p. 22)*
+
+
+## 1.45 If your program needs to read integers, but the user entered strings, an error would occur when running this program. What kind of error is this?
+Runtime error
+
+*(Liang, p. 20-21)*
+
+
+## 1.46 Suppose you write a program for computing the perimeter of a rectangle and you mistakenly write your program so that it computes the area of a rectangle. What kind of error is this?
+Logic error
+
+*(Liang, p. 21)*
+
+
+## 1.47 Identify and fix the errors in the following code:
+```
+public class Welcome {
+	public void Main(String[] args) {
+		System.out.println('Welcome to Java!);
+	}
+}
+```
+
+Corrected code:
+```
+public class Welcome {
+	public void main(String[] args) {
+		System.out.println("Welcome to Java!");
+	}
+}
+```
 
 
 ## References
