@@ -217,7 +217,7 @@ A comment is text that help prgorammers to communicate and understand the progra
 A comment is ignored by the compiler because it is not a programming statement.
 
 A comment line is denoted by 2 slashes (//) before the commentary text
-A comment paragraph is denoted by / &ast before commentary text and &ast / after commentary text.
+A comment paragraph is denoted by /\* before commentary text and \*/ after commentary text.
 
 *(Liang, p. 13)*
 
