@@ -1,8 +1,8 @@
 /*
 * Exercise 1_5: Write a programt that displays the result of:
 *	9.5 * 4.5 - 2.5 * 3
-*  ---------------------
-*		45.5 - 3.5
+*      ---------------------
+*           45.5 - 3.5
 * Programmer: Elizabeth Lee
 * Book:Introduction to Java Programming - Y. Daniel Liang
 */
