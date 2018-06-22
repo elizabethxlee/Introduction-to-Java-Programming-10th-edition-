@@ -2,7 +2,7 @@
 * Exercise 1_13: You can use Cramer's rule to solve the following
 * 2 x 2 system of linear equation:
 *	ax + by = e 		ed - bf 		af - ec
-*					x = --------	y = --------
+*			    x = --------	    y = --------
 *	cx + dy = f 		ad - bc 		ad - bc
 * Write a program that solves the following equation and displays
 * the value for x and y:
