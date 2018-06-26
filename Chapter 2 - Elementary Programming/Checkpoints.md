@@ -211,13 +211,9 @@ System.out.println(2 * (5 / 2));
 System.out.println(2 * 5 / 2);
 ```
 Results:
-
 8
-
 10
-
 4
-
 5
 
 
@@ -229,15 +225,10 @@ System.out.println("3 * 2 / 4 is " + 3 * 2 / 4);
 System.out.println("3.0 * 2 / 4 is " + 3.0 * 2 / 4);
 ```
 Yes
-
 Output:
-
 25 / 4 is 6
-
 25 / 4.0 is 6.25
-
 3 * 2 / 4 is 1
-
 3.0 * 2 / 4 is 1.5
 
 
@@ -249,7 +240,7 @@ System.out.println(Math.pow(2.0, 3.5));
 *(Liang, p. 48)*
 
 
-## 2.17 Suppose **m** and **r** are integers. Write a Java expression for mr<sub>2</sub> to obtain a floating point result.
+## 2.17 Suppose **m** and **r** are integers. Write a Java expression for mr<sup>2</sup> to obtain a floating point result.
 ```Java
 int m = 5;
 int r = 2;
