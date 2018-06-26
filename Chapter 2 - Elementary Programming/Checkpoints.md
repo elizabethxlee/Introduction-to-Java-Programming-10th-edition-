@@ -211,9 +211,13 @@ System.out.println(2 * (5 / 2));
 System.out.println(2 * 5 / 2);
 ```
 Results:
+
 8
+
 10
+
 4
+
 5
 
 
@@ -225,14 +229,39 @@ System.out.println("3 * 2 / 4 is " + 3 * 2 / 4);
 System.out.println("3.0 * 2 / 4 is " + 3.0 * 2 / 4);
 ```
 Yes
+
 Output:
+
 25 / 4 is 6
+
 25 / 4.0 is 6.25
+
 3 * 2 / 4 is 1
+
 3.0 * 2 / 4 is 1.5
 
 
 ## 2.16 Write a statement to display the result of 2<sup>3.5</sup>
+```Java
+System.out.println(Math.pow(2.0, 3.5));
+```
+
+*(Liang, p. 48)*
+
+
+## 2.17 Suppose **m** and **r** are integers. Write a Java expression for mr<sub>2</sub> to obtain a floating point result.
+```Java
+int m = 5;
+int r = 2;
+System.out.println(Math.pow(m, r));
+```
+
+
+## 2.18 How many accurate digits are stored in a float or double type variable?
+
+## 2.19 Which of the following are correct literals for floating-point numbers? 12.3, 12.3e+2, 23.4e-2, 20.5, 39F, 40D
+
+## 2.20 Which of the following are the same as 52.534? 5.2534e+1, 0.52534e+2, 525.34e-1, 5.2534e+0
 
 
 
