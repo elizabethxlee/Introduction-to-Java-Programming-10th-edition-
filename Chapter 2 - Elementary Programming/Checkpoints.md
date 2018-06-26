@@ -210,11 +210,11 @@ System.out.println(2 * 5 / 2 + 2 * 5 / 2);
 System.out.println(2 * (5 / 2));
 System.out.println(2 * 5 / 2);
 ```
-Results:
-8
-10
-4
-5
+Results:  
+8  
+10  
+4  
+5  
 
 
 ## 2.15 Are the following statements correct? If so, show the output.
@@ -224,12 +224,12 @@ System.out.println("25 / 4.0 is " + 25 / 4.0);
 System.out.println("3 * 2 / 4 is " + 3 * 2 / 4);
 System.out.println("3.0 * 2 / 4 is " + 3.0 * 2 / 4);
 ```
-Yes
-Output:
-25 / 4 is 6
-25 / 4.0 is 6.25
-3 * 2 / 4 is 1
-3.0 * 2 / 4 is 1.5
+Yes  
+Output:  
+25 / 4 is 6  
+25 / 4.0 is 6.25  
+3 * 2 / 4 is 1  
+3.0 * 2 / 4 is 1.5  
 
 
 ## 2.16 Write a statement to display the result of 2<sup>3.5</sup>
