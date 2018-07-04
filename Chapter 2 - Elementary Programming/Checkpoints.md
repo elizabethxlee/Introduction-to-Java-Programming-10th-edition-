@@ -269,6 +269,7 @@ Not the same: 5.2534e+0
 
 *(Liang, p. 49-50)*
 
+
 ## 2.21 Which of the following are correct literals? 5_2534e+1, \_2534, 5\_2, 5\_  
 Correct literals: 2534e+1, 5_2  
 Incorrect: \_2534, 5\_  
@@ -276,7 +277,149 @@ Incorrect: \_2534, 5\_
 *(Liang, p. 50)*
 
 
+## 2.22 How would you write the following arithmetic expression in Java?
+a. 		4		 				 3 + d(2 + a)
+	----------	-	9(a + bc) + --------------	
+	3(r + 34)						a + bd
 
+a. \frac{4}{3(r + 34)} - 9(a + bc) + \frac{3 + d(2 + a)}{a + bd}
+
+b. 5.5 * (r + 2.5)<sup>2.5 + t</sup>
+
+**Answer**
+```
+a. (4 / (3(r+34))) - (9(a + bc)) + ((3 + d(2 + a)) / (a + bd))
+
+b. 5.5 * Math.pow((r + 2.5), (2.5 + t))
+```
+
+*(Liang, p. 50-51)*
+
+
+## 2.23 How do you obtain the current second, minute, and hour?
+
+1. Obtain the total milliseconds since midnight, January 1, 1970, in totalMilliseconds by invoking System.currentTimeMillis() (e.g., 1203183068328 milliseconds).
+2. Obtain the total seconds totalSeconds by dividing totalMilliseconds by 1000 (e.g., 1203183068328 milliseconds / 1000 = 1203183068 seconds).
+3. Compute the current second from totalSeconds % 60 (e.g., 1203183068 seconds % 60 = 8, which is the current second).
+4. Obtain the total minutes totalMinutes by dividing totalSeconds by 60 (e.g., 1203183068 seconds / 60 = 20053051 minutes).
+5. Compute the current minute from totalMinutes % 60 (e.g., 20053051 minutes % 60 = 31, which is the current minute).
+6. Obtain the total hours totalHours by dividing totalMinutes by 60 (e.g., 20053051 minutes / 60 = 334217 hours).
+7. Compute the current hour from totalHours % 24 (e.g., 334217 hours % 24 = 17, which is the current hour).
+
+*(Liang, p. 52-53)*
+
+
+## 2.24 Show the output of the following code:
+```Java
+ double a = 6.5;
+ a += a + 1;
+ System.out.println(a);
+ a = 6;
+ a /= 2;
+ System.out.println(a);
+```
+
+ output:
+```
+14.0
+3.0
+```
+
+*(Liang, p. 54)*
+
+
+## 2.25 Which of these statements are true?
+a. Any expression can be used as a statement.
+b. The expression x++ can be used as a statement
+c. The statement x = x + 5 is also an expression.
+d. The statement x = y = x = 0 is illegal.
+
+They are all true statements
+
+## 2.26 Show the output of the following code:
+```Java
+int a = 6;
+int b = a ++;
+System.out.println(a);
+System.out.println(b);
+a = 6;
+b = ++a;
+System.out.println(a);
+System.out.println(b);
+```
+Output:
+```
+7
+6
+7
+7
+```
+
+## 2.27 Can different types of numeric values be used together in a computation?
+Yes, different types of numeric values can be used together in a computation.
+
+*(Liang, p. 56)*
+
+
+## 2.28 What does an explicit casting from a double to an int do with the fractional part of the double value? Does casting change the variable being cast?
+The fractional part of the double value is truncated. 
+Casting does not change the variable being cast.
+
+*(Liang, p. 57)*
+
+
+## 2.29 Show the following output:
+```Java
+float f = 12.5F;
+int i = (int)f;
+System.out.println("f is " + f);
+System.out.println("i is " + i);
+```
+Output:
+```
+f is 12.5
+i is 12
+```
+
+
+## 2.30 If you change (int)(tax * 100) / 100.0 to (int)(tax * 100) / 100 in line 11 in Listing 2.8, what will be the output of the input purchase amount of 197.55?
+```Java
+//Listing 2.8 SalesTax.java
+import java.util.Scanner;
+public class SalesTax {
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+
+		System.out.print("Enter purchase amount: ");
+		double purchaseAmount = input.nextDouble();
+
+		double tax = purchaseAmount * 0.06;
+		System.out.println("Sales tax is $" + (int)(tax * 100) / 100.0);
+	}
+}
+
+```
+output:
+```Java
+//The cents(fractional portion) is truncated
+Sales tax is $11
+```
+
+
+## 2.31 Show the output of the following code:
+```Java
+double amount = 5;
+System.out.println(amount / 2);
+System.out.println(5 / 2);
+```
+Output:
+```
+2.5
+2
+```
+
+
+## 2.32
 
 
 
