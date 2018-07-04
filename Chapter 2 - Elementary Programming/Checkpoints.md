@@ -14,6 +14,7 @@ public class Test {
 }
 ```
 Corrected code - capitalize 'string' and since a string cannot cross lines in source code, create 2 separate strings and concatenate them
+```Java
 public class Checkpoint2_1
 {
 	public void main(String[] args){
@@ -25,6 +26,7 @@ public class Checkpoint2_1
 		 "k is " + k);
 	}
 }
+```
 
 *(Liang, p. 36)*
 
@@ -63,9 +65,9 @@ No, there is no difference.
 
 
 ## 2.4 Which of the following identifiers are valid? Which are java keywords?	miles, Test, a++, --a, 4#R, $4, #44, apps, class, public, int, x, y, radius
-valid identifiers: miles, Test, $4, apps, x, y, radius
-invalid identifiers: a++, --a, 4#R, #44
-java keywords: class, public, int
+valid identifiers: miles, Test, $4, apps, x, y, radius  
+invalid identifiers: a++, --a, 4#R, #44  
+java keywords: class, public, int  
 
 *(Liang, p. 39-40)*
 
@@ -79,9 +81,9 @@ public class Test {
   }
 }
 ```
-Identify errors:
-variable k is not declared
-Corrected code:
+Identify errors:  
+variable k is not declared  
+Corrected code:  
 ```Java
 public class Test {
   public static void main(String[] args) {
@@ -102,7 +104,7 @@ public class Test {
 	}
 }
 ```
-Identified errors: You cannot declare *and* initialize multiple variables that way.
+Identified errors: You cannot declare *and* initialize multiple variables that way.  
 Corrected code:
 ```Java
 public class Test {
@@ -117,31 +119,31 @@ public class Test {
 
 ## 2.7 What are the benfits of using constants? Declare an int constant SIZE with value 20.
 The benefits of using constants is:
-(1) If a value is used multiple times, you only have to type it once
-(2) If you need to change the constant value, you only need to change it in a single location in the source code (which also lowers the chance of errors - missing some constant values)
+(1) If a value is used multiple times, you only have to type it once  
+(2) If you need to change the constant value, you only need to change it in a single location in the source code (which also lowers the chance of errors - missing some constant values)  
 (3) Makes a program easier to read
 
 *(Liang, p.43)*
 
 
 ## 2.8 What are the naming conventions for class names, method names, constants, and variables? Which of the following items can be a constant, a method, a variable, or a class according to the Java namin conventions? MAX_VALUE, Test, read, readDouble
-- Class names: Capitalize the first letter of each word
-- Method names, variable names: use lowercase letters. If a name consists of multiple words, make the first word lowercase and capitalize the first letter of each subsequent word.
+- Class names: Capitalize the first letter of each word  
+- Method names, variable names: use lowercase letters. If a name consists of multiple words, make the first word lowercase and capitalize the first letter of each subsequent word.  
 -constants: Capitalize all letters and use underscores to separate words
 
 *(Liang, p. 44)*
 
-MAX_VALUE can be a constant
-Test can be a class
-read can be a method or variable
-readDouble can be a method or variable
+MAX_VALUE can be a constant  
+Test can be a class  
+read can be a method or variable  
+readDouble can be a method or variable  
 
 
 ## 2.9 Translate the following algorithm into Java code: 
-Step 1: Declare a double variable named miles with initial value 100.
-Step 2: Declare a double constant name KILOMETERS_PER_MILE with value 1.609.
-Step 3: Declare a double variable named kilometers, multiply miles and KILOMETERS_PER_MILE, and assign the result to kilometers.
-Step 4: Display kilometers to the console.
+Step 1: Declare a double variable named miles with initial value 100.  
+Step 2: Declare a double constant name KILOMETERS_PER_MILE with value 1.609.  
+Step 3: Declare a double variable named kilometers, multiply miles and KILOMETERS_PER_MILE, and assign the result to kilometers.  
+Step 4: Display kilometers to the console.  
 What is kilometers after Step 4?
 
 ```Java
@@ -159,21 +161,21 @@ kilometers is equal to 160.9
 
 
 ## 2.10 Find the largest and smallest byte, short, int, long, float, and double. Which of these data types requires the least amount of memory?
-byte: smallest = -2^7, largest = 2^7 - 1
-short: smallest = -2^15, largest = 2^15 - 1
-int: smallest = -2^31, largest = 2^31 - 1
-long: smallest = -2^63, largest = 2^63 - 1
-float: smallest = 
-double:
+byte: smallest = -2<sup>7</sup>, largest = 2<sup>7</sup> - 1  
+short: smallest = -2<sup>15</sup>, largest = 2<sup>15</sup> - 1  
+int: smallest = -2<sup>31</sup>, largest = 2<sup>31</sup> - 1  
+long: smallest = -2<sup>63</sup>, largest = 2<sup>63</sup> - 1  
+float: smallest = 1.4E-45, largest = 3.4028235E38  
+double: smallest = 4.9E-324, largest = 1.7976931348623157E308  
 
 bytes require the least amount of memory
------Least memory------
-byte = 8 bit signed
-short = 16 bit signed
-int = 32 bit signed
-long = 64 bit signed
-float = 64 bit signed
-double = 64 bit signed
+-----Least memory------  
+byte = 8 bit signed  
+short = 16 bit signed  
+int = 32 bit signed  
+long = 64 bit signed  
+float = 64 bit signed  
+double = 64 bit signed  
 ------Most memory------
 
 *(Liang, p. 45)*
@@ -181,11 +183,11 @@ double = 64 bit signed
 
 
 ## 2.11 Show the result of the following remainders.
-56 % 6 	= 2
-78 % -4 = 2
--34 % 5 = -4
-5 % 1 	= 0
-1 % 5 	= 1
+56 % 6 	= 2  
+78 % -4 = 2  
+-34 % 5 = -4  
+5 % 1 	= 0  
+1 % 5 	= 1  
 
 *(Liang, p. 46)*
 
@@ -249,10 +251,32 @@ System.out.println(Math.pow(m, r));
 
 
 ## 2.18 How many accurate digits are stored in a float or double type variable?
+float type variable: 7-8 digits  
+double type variable: 15-17 digits
+
+*(Liang, p. 49)*
+
 
 ## 2.19 Which of the following are correct literals for floating-point numbers? 12.3, 12.3e+2, 23.4e-2, 20.5, 39F, 40D
+They are all correct literals. (floating-point numbers are any numbers with a decimal point)
+
+*(Liang, p. 49)*
+
 
 ## 2.20 Which of the following are the same as 52.534? 5.2534e+1, 0.52534e+2, 525.34e-1, 5.2534e+0
+Same: 5.2534e+1, 525.34e-1  
+Not the same: 5.2534e+0
+
+*(Liang, p. 49-50)*
+
+## 2.21 Which of the following are correct literals? 5_2534e+1, \_2534, 5\_2, 5\_  
+Correct literals: 2534e+1, 5_2  
+Incorrect: \_2534, 5\_  
+
+*(Liang, p. 50)*
+
+
+
 
 
 
