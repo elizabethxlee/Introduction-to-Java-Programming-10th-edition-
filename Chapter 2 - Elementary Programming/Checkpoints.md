@@ -278,14 +278,9 @@ Incorrect: \_2534, 5\_
 
 
 ## 2.22 How would you write the following arithmetic expression in Java?
-a. 		4		 				 3 + d(2 + a)  
-	----------	-	9(a + bc) + --------------  	
-	3(r + 34)						a + bd  
-
-a. \frac{4}{3(r + 34)} - 9(a + bc) + \frac{3 + d(2 + a)}{a + bd}
-
-$$\frac{1}{2}$$
-
+a. 		4                        3 + d(2 + a)  
+	----------	-	9(a + bc) + --------------  
+	3(r + 34)                       a + bd  
 
 b. 5.5 * (r + 2.5)<sup>2.5 + t</sup>
 
@@ -422,7 +417,8 @@ Output:
 ```
 
 
-## 2.32
+## 2.32 How would you write the following arithmetic expression?
+\frac{-b + \sqrt{b<sup>2</sup>  - 4ac}}{2a}
 
 
 
