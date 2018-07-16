@@ -419,7 +419,46 @@ Output:
 
 
 ## 2.32 How would you write the following arithmetic expression?
-\frac{-b + \sqrt{b<sup>2</sup>  - 4ac}}{2a}
+```
+-b + sqrt(b<sup>2</sup>  - 4ac)
+-------------------------------
+              2a
+```
+(-b + Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / 2 
+
+
+## 2.33 Show the output with the input value 1.99 (Listing 2.10, p. 63-64)
+```
+1 dollars
+3 quarters
+2 dimes
+0 nickels
+4 pennies
+```
+
+
+## 2.34 Can you declare a variable as int and later redeclare it as a double?
+No.
+
+## 2.35 What is an integer overflow? Can floating-point operations cause overflow?
+An integer overflow is when a variable is assigned an integer value that is too large to be stored.
+Yes, floating-point operations can also cause overflow.
+
+*(Liang, p. 65-66)*
+
+## 2.36 Will overflow cause a runtime error?
+Overflow will not cause a runtime error
+
+*(Liang, p.66)*
+
+
+## 2.37 What is a round-off error? Can integer operations cause round-off errors? Can floating-point operations cause round-off errors?
+A round-off error is the difference between a calculated approximation of a number and its exact mathematical value.
+Integer operations do not cause round-off errors.(However, if you divide 2 integers, the decimal portion will be truncated in order to maintain the integer format.)
+Yes, floating-point operations can cause round-off errors.
+
+*(Liang, p. 66)*
+
 
 
 
