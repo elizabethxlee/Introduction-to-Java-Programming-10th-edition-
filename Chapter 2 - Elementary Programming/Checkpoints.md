@@ -278,8 +278,8 @@ Incorrect: \_2534, 5\_
 
 ## 2.22 How would you write the following arithmetic expression in Java?
 ```
-a.  4                               3 + d(2 + a)  
-	----------	-	9(a + bc)  + --------------  
+a.    4                           3 + d(2 + a)  
+	----------	-  9(a + bc)  +  --------------  
 	3(r + 34)                         a + bd  
 
 
