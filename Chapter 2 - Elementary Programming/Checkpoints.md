@@ -420,7 +420,7 @@ Output:
 
 ## 2.32 How would you write the following arithmetic expression?
 ```
--b + sqrt(b<sup>2</sup>  - 4ac)
+-b + sqrt(b^2  - 4ac)
 -------------------------------
               2a
 ```
