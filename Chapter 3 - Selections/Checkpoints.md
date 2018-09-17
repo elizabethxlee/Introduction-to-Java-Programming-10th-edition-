@@ -61,7 +61,7 @@ if score > 90
 ```
 
 
-## Write an if statement that increases pay by 3% if score is greater than 90, otherwise increases pay by 1%.
+##3.6 Write an if statement that increases pay by 3% if score is greater than 90, otherwise increases pay by 1%.
 ```
 if (score > 90)
 {
@@ -189,14 +189,100 @@ else
 Yes, both statements are correct. Statement (b) is better.
 
 
+##3.14 What is the output of the following code if number is 14, 15, or 30?
+(a)
+```Java
+if (number % 2 ==0)
+	System.out.println(number + " is even");
+if (number % 5 == 0)
+	System.out.println(number + " is multiple of 5");
+```
+(b)
+```Java
+if (number % 2 == 0)
+	System.out.println(number + " is even");
+else if (number % 5 == 0)
+	System.out.println(number + " is multiple of 5");
+```
+Output for 14:
+(a) 14.0 is even
+(b) 14.0 is even
+
+Output for 15:
+(a) 15.0 is a multiple of 5
+(b)	15.0 is a multiple of 5
+
+Output for 30:
+(a) 30.0 is even
+	30.0 is a multiple of 5
+(b) 30.0 is even
 
 
+##3.15 Which of the following is a possible output from invoking Math.random()?
+```
+323.4 0.5, 34, 1.0, 0.0, 0.234
+```
+0.5, 0.0, and 0.234 are possible output of invoking Math.random().
+*(Liang, p. 87)*
 
 
+##3.16 	
+(a) How do generate a random integer **i** such that 0 <= i < 20?
+```
+	System.out.print((int)(Math.random()*20));
+```
+(b) How do you generate a random integer **i** such that 10 <= i < 20?
+```
+	System.out.print((int)(Math.random()*10) + 10);
+```
+(c) How do you generate a random integer  **i** such that 10 <= i < 50?
+```
+	System.out.print((int)(Math.random()*41) + 10);
+```
+(d) Write an expresson that returns 0 or 1 randomly.
+```
+	System.out.print((int)(Math.random()*2));
+```
 
 
+##3.17 Are the following two statements equivalent?
+(a)
+```Java
+if (income <= 10000)
+	tax = income * 0.1;
+else if (income <= 20000)
+	tax = 1000 + (income - 10000) * 0.15;
+```
+(b)
+```Java
+if (income <= 10000)
+	tax = income * 0.1;
+else if (income > 10000 & income <=20000)
+	tax = 1000 + (income - 10000) * 0.15;
+```
+Yes, the two statements are equivalent.
 
 
+##3.18 Assuming that x is 1, show the result of the following Boolean expressions.
+(true) && (3 > 4) --> FALSE
+!(x > 0) && (x > 0) --> FALSE
+(x > 0) || (x < 0) --> TRUE
+
+(x != 0) || (x == 0) --> TRUE
+(x >= 0) || (x < 0) --> TRUE
+(x != 1) == !(x == 1) --> TRUE
+
+
+##3.19 (a) Write a Boolean expression that evaluates to true if a number stored in variable num is between 1 and 100. (b) Write a Boolean expression that evaluates to true if a number stored in variable num is between 1 and 100 or the number is negative.
+(a)```
+(num >= 1) && (num <= 100)
+```
+(b)
+```
+((num >= 1) && (num <= 100)) || (num < 0)
+```
+
+##3.20(a) WRtie a Boolean expression for |x - 5| < 4.5. (b) Write a boolean expressoin for |x - 5| > 4.5.
 
 
 
