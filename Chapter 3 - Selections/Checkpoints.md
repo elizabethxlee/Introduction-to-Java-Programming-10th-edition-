@@ -149,6 +149,56 @@ A
 ```
 
 
+##3.11 Which of the following statements are equivalent? Which ones are correctly indented?
+*(Liang, p. 86)*
+Statements (a), (c), and (d) are equivalent. 
+Statements (b) and (c) are correctly indented.
+
+
+##3.12 REwrite the following statement using a Boolean expression:
+```Java
+	if (count % 10 == 0)
+		newLine = true;
+	else
+		newLine = false;
+```
+Rewritten:
+```Java
+	newLine = (count % 10 == 0);
+```
+*(Liang, p. 86)*
+
+
+##3.13 Are the following statements correct? Which one is better?
+(a)
+```Java
+if (age < 16)
+	System.out.println
+		("Cannot get a driver's license");
+if (age >= 16)
+	System.out.println
+		("Can get a driver's license");
+```
+(b)
+```Java
+if (age < 16) 
+	System.out.println("Cannot get a driver's license");
+else 
+	System.out.println("Can get a driver's license");
+```
+Yes, both statements are correct. Statement (b) is better.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
