@@ -327,17 +327,29 @@ The output is
 (x + y < z) is true
 (x + y > z) is false
 ```
-
 Reference *(Liang, p.97)* for example program.
 
 
-## 3.25 Write a Boolean expression that evaluates to true if age is greater than 13 and less than 18.
+## 3.25 Write a Boolean expression that evaluates to true if age is greater than 13 and less than 18.  
 ```
 age > 13 && age < 18
 ```
 
 
-## 3.26 Write a Boolean expression that evaluates to true if weight is greather than 50 pounds or height is greater than 60 inches
+## 3.26 Write a Boolean expression that evaluates to true if weight is greather than 50 pounds or height is greater than 60 inches.  
+```
+weight > 50 || height > 60
+```
+
+
+## 3.27 Write a Boolean expression that evaluates to true if weight is greater than 50 pounds and height is greater than 60 inches.
+```
+weight > 50 && height > 60
+```
+
+
+## 3.28 Write a Boolean expression that evalues to true if either weight is greater than 50 pounds or height is greater than 60 inches, but not both.
+
 
 
 
