@@ -283,7 +283,68 @@ Yes, the two statements are equivalent.
 ((num >= 1) && (num <= 100)) || (num < 0)
 ```
 
-## 3.20(a) WRtie a Boolean expression for |x - 5| < 4.5. (b) Write a boolean expressoin for |x - 5| > 4.5.
+## 3.20(a) Write a Boolean expression for |x - 5| < 4.5. (b) Write a boolean expression for |x - 5| > 4.5.  
+(a)
+```
+(x - 5) < 4.5 && (x - 5) > -4.5
+```
+(b)
+```
+(x - 5) > 4.5 || (x - 5) < -4.5
+```
+
+
+## 3.21 Assume that x and y are int type. Which of the following are legal Java expressions?
+x > y > 0 --> not legal  
+x = y && y --> not legal  
+x /= y --> legal  
+x or y --> not legal  
+x and y --> not legal  
+(x != 0) || (x = 0) --> not legal  
+
+
+## 3.22 Are the following two expressions the same?  
+```
+(a) x % 2 == 0 && x % 3 == 0
+
+(b) x % 6 == 0
+```
+Yes, the two expressions are the same.
+
+
+## 3.23 What is the value of the expression x >= 50 && x <= 100 if x is 45, 67, or 101?  
+If x = 45: False  
+If x = 67: True  
+If x = 101: False  
+
+
+## 3.24 Suppose, when you run the following program, you enter the input 2 3 6 from the console. What is the output?
+The output is  
+```
+(x < y && y < z) is true
+(x < y && y < z) is true
+!(x < y) is false
+(x + y < z) is true
+(x + y > z) is false
+```
+
+Reference *(Liang, p.97)* for example program.
+
+
+## 3.25 Write a Boolean expression that evaluates to true if age is greater than 13 and less than 18.
+```
+age > 13 && age < 18
+```
+
+
+## 3.26 Write a Boolean expression that evaluates to true if weight is greather than 50 pounds or height is greater than 60 inches
+
+
+
+
+
+
+
 
 
 
