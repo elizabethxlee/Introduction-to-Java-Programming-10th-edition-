@@ -332,24 +332,218 @@ Reference *(Liang, p.97)* for example program.
 
 ## 3.25 Write a Boolean expression that evaluates to true if age is greater than 13 and less than 18.  
 ```
-age > 13 && age < 18
+(age > 13) && (age < 18)
 ```
 
 
 ## 3.26 Write a Boolean expression that evaluates to true if weight is greather than 50 pounds or height is greater than 60 inches.  
 ```
-weight > 50 || height > 60
+(weight > 50) || (height > 60)
 ```
 
 
 ## 3.27 Write a Boolean expression that evaluates to true if weight is greater than 50 pounds and height is greater than 60 inches.
 ```
-weight > 50 && height > 60
+(weight > 50) && (height > 60)
 ```
 
 
-## 3.28 Write a Boolean expression that evalues to true if either weight is greater than 50 pounds or height is greater than 60 inches, but not both.
+## 3.28 Write a Boolean expression that evalues to true if either weight is greater than 50 pounds or height is greater than 60 inches, but not both.  
+```
+(weight > 50) ^ (height > 60)
+```
 
+*(Liang, p.93)*
+
+
+## 3.29 What data types are required for a switch variable? If the keyword break is not used after a case is processed, what is the next statement to be executed? Can you convert a switch statement to an equivalent if statement, or vice versa? What are the advantages of using a switch statement?  
+-The required data types are either char, byte, short, int, or String.  
+-If the keyword 'break' is not used after a case statement, the statements starting from the matched case will execute until the end of the switch statement is reached.  
+-Yes, you can convert switch statements to an equivalent if statement and vice versa.  
+-The advantage of using a switch statement is that it simplifies code and makes it easier to read and maintain.  
+
+*(Liang, p.101)*
+
+
+## 3.30 What is y after the following switch statement is executed? Rewrite the code using an if-else statement.
+```
+x = 3; y = 3;
+switch (x + 3) {
+	case 6: y = 1;
+	default: y += 1;
+}
+```
+Rewritten:
+```Java
+		int x=3;
+		int y = 3;
+		if (x + 3 == 6)
+			y = 1;
+		y += 1;
+``` 
+
+
+## 3.31 What is x after the following if-else statement is executed? Use a switch statement to rewrite it and draw the flowchart for the new switch statement.
+```
+		int x = 1, a = 3;
+		/*
+		if (a == 1)
+			x +=5;
+		else if (a == 2)
+			x += 10;
+		else if (a ==3)
+			x += 16;
+		else if (a == 4)
+			x += 34;
+```
+Rewritten:
+```Java
+		int x = 1, a = 3;
+		switch(a)
+		{
+			case 1: x+=5; break;
+			case 2: x += 10; break;
+			case 3: x += 16; break;
+			case 4: x += 34; break;
+		
+		}
+```
+
+
+## 3.32 Write a switch statment that displays Sunday, Monday, Tuesday Wednesday, Thursday, Firday, Saturday if day is 0, 1, 2, 3, 4, 5, 6, accordingly.
+```Java
+		switch(day)
+		{
+			case 0: System.out.println("Sunday"); break;
+			case 1: System.out.println("Monday"); break;
+			case 2: System.out.println("Tuesday"); break;
+			case 3: System.out.println("Wednesday"); break;
+			case 4: System.out.println("Thursday"); break;
+			case 5: System.out.println("Friday"); break;
+			case 6: System.out.println("Saturday"); break;
+```
+
+
+## 3.33 Suppose that, when you run the following program, you enter the input 2 3 6 from the console. What is the output?  
+```
+public class Test {
+	public static void main(String[] args) {
+		java.util.Scanner input = new java.util.Scanner(System.in);
+		double x = input.nextDouble();
+		double y = input.nextDouble();
+		double z = input.nextDouble();
+
+		System.out.println((x < y && y < z)) ? "sorted" : "not sorted");
+	}
+}
+```
+This program uses the conditional expression boolean-expression ? expression1 : expression2;  
+*(Liang, p.103)*  
+If the input is 2 3 6, the output would be "sorted".  
+
+
+## 3.34 Rewrite the following if statements using the conditional operator  
+```
+if (ages >= 16)
+	ticketPrice = 20;
+else 
+	ticketPrice = 10;
+```
+Rewritten  
+```
+ticketPrice = (ages >= 16) ? 20 : 10
+```
+
+
+## 3.35 Rewrite the following conditional expressions using if-else statements.    
+(a) score = (x > 10) ? 3 * scale : 4 * scale;  
+Rewritten:
+```Java
+	if (x > 10)
+	{
+		score = 3 * scale;
+	}
+	else
+	{
+		score = 4 * scale;
+	}
+```
+(b) tax = (income > 10000) ? income * 0.2 : income * 0.17 + 1000;  
+Rewritten:  
+```Java
+		if (income > 10000)
+		{
+			tax = income * 0.2;
+		}
+		else
+		{
+			tax = income * 0.17 + 1000;
+		}
+```
+(c) System.out.println((number % 3 == 0) ? i : j);  
+Rewritten:  
+```Java
+	if (number % 3 == 0)
+	{
+		System.out.println(i);
+	}
+	else
+	{
+		Sytem.out.println(j);
+	}
+```
+
+
+## 3.36 Write a conditional expression that returns -1 or 1 randomly.
+```Java
+		double num = Math.random();
+		System.out.println((num >= 0.5 ) ? -1 : 1);
+```
+
+## 3.37 List the precedence order of the Boolean operators. Evaluate the following expressions:
+```
+true || true && false
+true && true || false
+```
+The precedence order of Boolean operators is:  
+(1) !  
+(2) ==, !=
+(3) ^  
+(4) &&  
+(5) ||  
+*(Liang, p. 105)*
+
+The expressions evaluated are:
+```
+true
+true
+```
+
+## 3.38 True or false? All binary operators except = are left associative.
+False. All binary operators except assignment operators are left associative.
+*(Liang, p. 105)*
+
+
+## 3.39 Evaluate the following expressions:
+```
+2 * 2 - 3 > 2 && 4 - 2 > 5
+2 * 2 - 3 > 2 || 4 - 2 > 5
+```
+Evaluated:
+```
+false
+false
+```
+*refer to table 3.4 - 3.6 (Liang, p. 93-94)*
+
+
+## 3.40  
+Is (x > 0 && x < 10) the same as ((x > 0) && (x < 10))?  
+Yes  
+Is (x > 0 || x < 10) the same as ((x > 0) || (x < 10))?
+Yes  
+Is (x > 0 || x < 10 && y < 0) the same as (x > 0 || (x < 10 && y < 0))?  
+Yes  
 
 
 
