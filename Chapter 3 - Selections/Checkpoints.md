@@ -420,6 +420,7 @@ switch(day)
 	case 4: System.out.println("Thursday"); break;
 	case 5: System.out.println("Friday"); break;
 	case 6: System.out.println("Saturday"); break;
+}
 ```
 
 
