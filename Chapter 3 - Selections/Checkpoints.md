@@ -157,10 +157,10 @@ Statements (b) and (c) are correctly indented.
 
 ## 3.12 Rewrite the following statement using a Boolean expression:
 ```Java
-	if (count % 10 == 0)
-		newLine = true;
-	else
-		newLine = false;
+if (count % 10 == 0)
+	newLine = true;
+else
+	newLine = false;
 ```
 Rewritten:
 ```Java
@@ -375,52 +375,51 @@ switch (x + 3) {
 ```
 Rewritten:
 ```Java
-		int x=3;
-		int y = 3;
-		if (x + 3 == 6)
-			y = 1;
-		y += 1;
+int x=3;
+int y = 3;
+if (x + 3 == 6)
+	y = 1;
+y += 1;
 ``` 
 
 
 ## 3.31 What is x after the following if-else statement is executed? Use a switch statement to rewrite it and draw the flowchart for the new switch statement.
 ```
-		int x = 1, a = 3;
-		/*
-		if (a == 1)
-			x +=5;
-		else if (a == 2)
-			x += 10;
-		else if (a ==3)
-			x += 16;
-		else if (a == 4)
-			x += 34;
+int x = 1, a = 3;
+
+if (a == 1)
+	x +=5;
+else if (a == 2)
+	x += 10;
+else if (a ==3)
+	x += 16;
+else if (a == 4)
+	x += 34;
 ```
 Rewritten:
 ```Java
-		int x = 1, a = 3;
-		switch(a)
-		{
-			case 1: x+=5; break;
-			case 2: x += 10; break;
-			case 3: x += 16; break;
-			case 4: x += 34; break;
-		
-		}
+int x = 1, a = 3;
+switch(a)
+{
+	case 1: x+=5; break;
+	case 2: x += 10; break;
+	case 3: x += 16; break;
+	case 4: x += 34; break;	
+}
 ```
 
 
 ## 3.32 Write a switch statment that displays Sunday, Monday, Tuesday Wednesday, Thursday, Firday, Saturday if day is 0, 1, 2, 3, 4, 5, 6, accordingly.
 ```Java
-		switch(day)
-		{
-			case 0: System.out.println("Sunday"); break;
-			case 1: System.out.println("Monday"); break;
-			case 2: System.out.println("Tuesday"); break;
-			case 3: System.out.println("Wednesday"); break;
-			case 4: System.out.println("Thursday"); break;
-			case 5: System.out.println("Friday"); break;
-			case 6: System.out.println("Saturday"); break;
+switch(day)
+{	
+	case 0: System.out.println("Sunday"); break;
+	case 1: System.out.println("Monday"); break;
+	case 2: System.out.println("Tuesday"); break;
+	case 3: System.out.println("Wednesday"); break;
+	case 4: System.out.println("Thursday"); break;
+	case 5: System.out.println("Friday"); break;
+	case 6: System.out.println("Saturday"); break;
 ```
 
 
@@ -459,38 +458,38 @@ ticketPrice = (ages >= 16) ? 20 : 10
 (a) score = (x > 10) ? 3 * scale : 4 * scale;  
 Rewritten:
 ```Java
-	if (x > 10)
-	{
-		score = 3 * scale;
-	}
-	else
-	{
-		score = 4 * scale;
-	}
+if (x > 10)
+{
+	score = 3 * scale;
+}
+else
+{
+	score = 4 * scale;
+}
 ```
 (b) tax = (income > 10000) ? income * 0.2 : income * 0.17 + 1000;  
 Rewritten:  
 ```Java
-		if (income > 10000)
-		{
-			tax = income * 0.2;
-		}
-		else
-		{
-			tax = income * 0.17 + 1000;
-		}
+if (income > 10000)
+{
+	tax = income * 0.2;
+}
+else
+{
+	tax = income * 0.17 + 1000;
+}
 ```
 (c) System.out.println((number % 3 == 0) ? i : j);  
 Rewritten:  
 ```Java
-	if (number % 3 == 0)
-	{
-		System.out.println(i);
-	}
-	else
-	{
-		Sytem.out.println(j);
-	}
+if (number % 3 == 0)
+{
+	System.out.println(i);
+}
+else
+{
+	Sytem.out.println(j);
+}
 ```
 
 
