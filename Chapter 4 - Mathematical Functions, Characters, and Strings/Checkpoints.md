@@ -41,22 +41,22 @@ double degrees = Math.toDegrees(Math.PI / 7);
 ## 4.5 Write an expression that obtains a random integer between 34 and 55. Write an expression that obtains a random integer between 0 and 999. Write an expression that obtains a random number between 5.5 and 55.5.
 //General: a + Math.random() * b --> returns a random number between a and a+b, excluding a+b
 ```
-34 + (int)Math.random() * (55 - 34)
-(int)Math.random() * 1000;
+34 + (int)Math.random() * (55 - 34)  
+(int)Math.random() * 1000;  
 5.5 + Math.random() * (55.5 - 5.5)
 ```
 *(Liang, p. 122)*
 
 ## 4.6 Why does the Math class not need to be imported?  
-It does not need to be imported because it is in the java.lang package. It is implicitly imported.
+It does not need to be imported because it is in the java.lang package. It is implicitly imported.  
 *(Liang, p. 124)*
 
 
 ## 4.7 What is Math.log(Math.exp(5.5))? What is Math.exp(Math.log(5.5))? What is Math.asin(Math.sin(Math.PI / 6))? What is Math.sin(Math.asin(Math.PI / 6))?  
-Math.log(Math.exp(5.5)) = 5.5
-Math.exp(Math.log(5.5)) = 5.5
-Math.asin(Math.sin(Math.PI / 6)) = 0.5235987755982988
-Math.sin(Math.asin(Math.PI / 6)) = 0.5235987755982988
+Math.log(Math.exp(5.5)) = 5.5  
+Math.exp(Math.log(5.5)) = 5.5  
+Math.asin(Math.sin(Math.PI / 6)) = 0.5235987755982988  
+Math.sin(Math.asin(Math.PI / 6)) = 0.5235987755982988  
 
 
 
