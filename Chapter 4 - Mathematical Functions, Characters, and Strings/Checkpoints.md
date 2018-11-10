@@ -89,10 +89,10 @@ Include a backslash before the the character.
 *(Liang, 126)*
 
 ## 4.11 Evaluate the following:  
-int i = '1';  
-int j = '1' + '2' * ('4' - '3') + 'b' / 'a';  
-int k = 'a';  
-char c = 90;  
+int i = '1';  --> 49  
+int j = '1' + '2' * ('4' - '3') + 'b' / 'a';  --> 100  
+int k = 'a';  --> 97  
+char c = 90;  --> Z  
 
 ## 4.12 Can the following conversions involving casting be allowed? If so, find the converted result.  
 char c = 'A';  
