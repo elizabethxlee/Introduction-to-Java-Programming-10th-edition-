@@ -139,10 +139,115 @@ System.out.println('a' == 'a'); --> true
 System.out.println('a' != 'b'); --> true  
 
 
+## 4.16 Suppose that s1, s2, and s3 are three strings, give as follows:
+```Java
+String s1 = "Welcome to Java";
+String s2 = "Programming is fun";
+String s3 = "Welcome to Java";
+```
+What are the results of the following expresssions?  
+(a) s1 == s2			 *false*  
+(b) s2 == s3			 *false*  
+(c) s1.equals(s2)		 *false*  
+(d) s1.equals(s3)		 *true*  
+(e) s1.compareTo(s2)	 *positive number*  
+(f) s2.compareTo(s3)	 *negative number*  
+(g) s2.compareto(s2)	 *0*  
+(h) s1.charAt(0)		 *W*  
+(i) s1.indexOf('j')		 *-1*  
+(j) s1.indexOf("to")	 *8*  
+(k) s1.lastIndexOf('a')	 *14*  
+(l) s1.lastIndexOf("o",15)	*9*  
+(m) s1.length()			 *15*  
+(n) s1.substring(5)		 *me to Java*  
+(o) s1.substring(5, 11)	 *me to *  
+(p) s1.startsWith("Wel") *true*  
+(q) s1.endsWith("Java")	 *true*  
+(r)	s1.toLowerCase()	 *welcome to java*  
+(s)	s1.toUpperCase()	 *WELCOME TO JAVA*  
+(t) s1.concat(s2) 		 *Welcome to JavaProgramming is fun"*  
+(u) s1.contains(s2)		 *false*  
+(v) "\t Wel \t".trim()	 *Wel*  
+
+## 4.17 Suppose that s1 and s2 are two strings. Which of the following statements or expressions are incorrect?
+```Java
+String s = "Welcome to Java"; 	//correct
+String s3 = s1 + s2;			//correct
+String s3 = s1 - s2;			//incorrect
+s1 == s2;						//correct
+s1 >= s2;						//incorrect
+s1.compareTo(s2);				//correct
+int i = s1.length();			//correct
+char c = s1(0);					//incorrect
+char c = s1.charAt(s1.length());//incorrect
+```
+
+## 4.18 Show the output of the following statements(write a program to verify your results):  
+
+System.out.println("1" + 1); --> 11  
+System.out.println('1' + 1); --> 50  
+System.out.println("1" + 1 + 1);  --> 111  
+System.out.println("1" + (1 + 1)); --> 12  
+System.out.println('1' + 1 + 1); --> 51  
 
 
+## 4.19 Evaluate the following expressions(write a program to verify your results):  
+1 + "Welcome " + 1 + 1  --> 1Welcome 11  
+1 + "Welcome " + (1 + 1)  --> 1Welcome 2  
+1 + "Welcome " + ('\u0001' + 1)  --> 1Welcome 2
+1 + "Welcome " + 'a' + 1  --> 1Welcome a1  
 
+## 4.20 Let s1 be "Welcome " and s2 be " welcome ". Write the code for the following statements:
+```Java
+//(a) Check whether s1 is equal to s2 and assign the result to Boolean variable isEqual.
+boolean isEqual = s1.isEqual(s2);
 
+//(b) Check whether s1 is equal to s2, ignoring the case, and assign the result to a Boolean variable isEqual.
+boolean isEqual = s1.equalsIgnoreCase(s2);
+
+//(c) Compare s1 with s2 and assign the result to an int variable x.
+int x = s1.compareTo(s2);
+
+//(d) Compare s1 with s2, ignoring case, and assign the result to an int variable x.
+int x = s1.compareToIgnoreCase(s2);
+
+//(e) Check whether s1 has the prefix AAA and assign the result to a Boolean variable b.
+boolean b = s1.startsWith("AAA");
+
+//(f) Check whether s1 has the suffix AAA and assign the result to a Boolean variable b.
+boolean b = s1.endsWith("AAA");
+
+//(g) Assign the length of s1 to an int variable x.
+int x = s1.length();
+
+//(h) Assign the first character of s1 to an char variable x.
+char x = s1.charAt(0);
+
+//(i) Create a new string s3 that combines s1 with s2.
+String s3 = s1 + s2;
+
+//(j) Create a substring of s1 starting from index 1.
+s1.substring(1);
+
+//(k) Create a substring of s1 from index 1 to index 4.
+s1.substring(1, 5);
+
+//(l) Create a new string s3 that converts s1 to lowercase.
+String s3 = s1.toLowerCase();
+
+//(m) Create a new string s3 that converts s1 to uppercase.
+String s3 = s1.toUpperCase();
+
+//(n) Create a new string s3 that trims whitespace characters on both ends of s1.
+String s3 = s1.trim();
+
+//(o) Assign the index of the first occurrence of the character e in s1 to an int variable x
+int x = indexOf('e');
+
+//(p) Assign the index of the last occurence of the string abc in s1 to an int variable x.
+int x = lastIndexOf("abc");
+
+```
 
 
 
