@@ -89,10 +89,10 @@ Include a backslash before the the character.
 *(Liang, 126)*
 
 ## 4.11 Evaluate the following:  
-int i = '1';
-int j = '1' + '2' * ('4' - '3') + 'b' / 'a';
-int k = 'a';
-char c = 90;
+int i = '1';  
+int j = '1' + '2' * ('4' - '3') + 'b' / 'a';  
+int k = 'a';  
+char c = 90;  
 
 ## 4.12 Can the following conversions involving casting be allowed? If so, find the converted result.  
 char c = 'A';  
@@ -103,13 +103,13 @@ float f = 1000.34f;
 int i = (int)f;  
 yes, the converted result is 1000
 
-double d = 1000.34;
-int i = (int)d;
-yes, the converted result is 1000
+double d = 1000.34;  
+int i = (int)d;  
+yes, the converted result is 1000  
 
-int i = 97;
+int i = 97;  
 char c = (char)i;  
-yes, the converted result is 97
+yes, the converted result is 97  
 
 ## 4.13 Show the output of the following program:
 ```Java
@@ -126,8 +126,8 @@ public class Test {
 
 ## 4.14 Write the code that generates a random lowercase letter.
 ```Java
-		double letter = 97 + Math.random() * (122-97);
-		System.out.println((char)letter);
+	double letter = 97 + Math.random() * (122-97);
+	System.out.println((char)letter);
 ```
 
 ## 4.15 Show the output of the following statements:  
