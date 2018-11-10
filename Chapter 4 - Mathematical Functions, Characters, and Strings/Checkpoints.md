@@ -59,6 +59,85 @@ Math.asin(Math.sin(Math.PI / 6)) = 0.5235987755982988
 Math.sin(Math.asin(Math.PI / 6)) = 0.5235987755982988  
 
 
+## 4.8 Use print statements to find out the ASCII code for '1', 'A', 'B', 'a', and 'b'. Use print statements to find out the character for the decimal codes 40, 59, 79, 85, and 90. Use print statements to find out the character for the hexadecimal code 40, 5A, 71, 72, and 7A.  
+```Java
+System.out.println((int)'1');  
+System.out.println((int)'A');
+System.out.println((int)'B');
+System.out.println((int)'a');
+System.out.println((int)'b');
+
+System.out.println((char)40);
+System.out.println((char)59);
+System.out.println((char)79);
+System.out.println((char)85);
+System.out.println((char)90);
+
+System.out.println((char)0X40);
+System.out.println((char)0X5A);
+System.out.println((char)0X71);
+System.out.println((char)0X72);
+System.out.println((char)0X7A);
+```
+
+## 4.9 Which of the following are correct literals for characters? '1', '\u345dE', '\u3fFa', '\b', '\t'  
+'1', '\u3fFa', '\b', and '\t' are correct literals for characters.  
+'\u345dE' is an incorrect literal for characters. 
+
+## 4.10 How do you display the characters \ and "?
+Include a backslash before the the character.
+*(Liang, 126)*
+
+## 4.11 Evaluate the following:  
+int i = '1';
+int j = '1' + '2' * ('4' - '3') + 'b' / 'a';
+int k = 'a';
+char c = 90;
+
+## 4.12 Can the following conversions involving casting be allowed? If so, find the converted result.  
+char c = 'A';  
+int i = (int)c;  
+yes, the converted result is 65
+
+float f = 1000.34f;
+int i = (int)f;  
+yes, the converted result is 1000
+
+double d = 1000.34;
+int i = (int)d;
+yes, the converted result is 1000
+
+int i = 97;
+char c = (char)i;  
+yes, the converted result is 97
+
+## 4.13 Show the output of the following program:
+```Java
+public class Test {
+	public static void main(String[] args){
+		char x = 'a';
+		char y = 'c';
+		System.out.println(++x);
+		System.out.println(++y);
+		System.out.prinln(x - y);
+	}
+}
+```
+
+## 4.14 Write the code that generates a random lowercase letter.
+```Java
+		double letter = 97 + Math.random() * (122-97);
+		System.out.println((char)letter);
+```
+
+## 4.15 Show the output of the following statements:  
+System.out.println('a' < 'b'); --> true  
+System.out.println('a' <= 'A'); --> false  
+System.out.println('a' > 'b'); --> false  
+System.out.println('a' >= 'A'); --> true  
+System.out.println('a' == 'a'); --> true  
+System.out.println('a' != 'b'); --> true  
+
 
 
 
