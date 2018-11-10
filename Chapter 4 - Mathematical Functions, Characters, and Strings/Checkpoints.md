@@ -146,40 +146,40 @@ String s2 = "Programming is fun";
 String s3 = "Welcome to Java";
 ```
 What are the results of the following expresssions?  
-(a) s1 == s2			 *false*  
-(b) s2 == s3			 *false*  
-(c) s1.equals(s2)		 *false*  
-(d) s1.equals(s3)		 *true*  
-(e) s1.compareTo(s2)	 *positive number*  
-(f) s2.compareTo(s3)	 *negative number*  
-(g) s2.compareto(s2)	 *0*  
-(h) s1.charAt(0)		 *W*  
-(i) s1.indexOf('j')		 *-1*  
-(j) s1.indexOf("to")	 *8*  
-(k) s1.lastIndexOf('a')	 *14*  
-(l) s1.lastIndexOf("o",15)	*9*  
-(m) s1.length()			 *15*  
-(n) s1.substring(5)		 *me to Java*  
-(o) s1.substring(5, 11)	 *me to *  
-(p) s1.startsWith("Wel") *true*  
-(q) s1.endsWith("Java")	 *true*  
-(r)	s1.toLowerCase()	 *welcome to java*  
-(s)	s1.toUpperCase()	 *WELCOME TO JAVA*  
-(t) s1.concat(s2) 		 *Welcome to JavaProgramming is fun"*  
-(u) s1.contains(s2)		 *false*  
-(v) "\t Wel \t".trim()	 *Wel*  
+(a) s1 == s2	--> *false*  
+(b) s2 == s3	--> *false*  
+(c) s1.equals(s2)	--> *false*  
+(d) s1.equals(s3)	 --> *true*  
+(e) s1.compareTo(s2)	--> *positive number*  
+(f) s2.compareTo(s3)	--> *negative number*  
+(g) s2.compareto(s2)	--> *0*  
+(h) s1.charAt(0)		--> *W*  
+(i) s1.indexOf('j')		--> *-1*  
+(j) s1.indexOf("to")	--> *8*  
+(k) s1.lastIndexOf('a')	--> *14*  
+(l) s1.lastIndexOf("o",15)	--> *9*  
+(m) s1.length()			--> *15*  
+(n) s1.substring(5)		--> *me to Java*  
+(o) s1.substring(5, 11)	--> *me to*  
+(p) s1.startsWith("Wel") --> *true*  
+(q) s1.endsWith("Java")	--> *true*  
+(r)	s1.toLowerCase()	--> *welcome to java*  
+(s)	s1.toUpperCase()	--> *WELCOME TO JAVA*  
+(t) s1.concat(s2) 		--> *Welcome to JavaProgramming is fun"*  
+(u) s1.contains(s2)		--> *false*  
+(v) "\t Wel \t".trim()	--> *Wel*  
 
 ## 4.17 Suppose that s1 and s2 are two strings. Which of the following statements or expressions are incorrect?
 ```Java
-String s = "Welcome to Java"; 	//correct
-String s3 = s1 + s2;			//correct
-String s3 = s1 - s2;			//incorrect
-s1 == s2;						//correct
-s1 >= s2;						//incorrect
-s1.compareTo(s2);				//correct
-int i = s1.length();			//correct
-char c = s1(0);					//incorrect
-char c = s1.charAt(s1.length());//incorrect
+String s = "Welcome to Java";	//correct
+String s3 = s1 + s2;	//correct
+String s3 = s1 - s2;	//incorrect
+s1 == s2;	//correct
+s1 >= s2;	//incorrect
+s1.compareTo(s2);	//correct
+int i = s1.length();	//correct
+char c = s1(0);	//incorrect
+char c = s1.charAt(s1.length());	//incorrect
 ```
 
 ## 4.18 Show the output of the following statements(write a program to verify your results):  
