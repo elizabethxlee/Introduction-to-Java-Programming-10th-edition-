@@ -249,9 +249,28 @@ int x = lastIndexOf("abc");
 
 ```
 
+## 4.22 What are the format specifiers for outputting a Boolean value, a character, a decimal integer, a floating-point number, and a string?  
+Boolean: %b  
+character: %c  
+decimal integer: %d  
+floating-point number: %f  
+string: %s  
+*(Liang, 146)*
 
+## 4.23 What is wrong in the following statements?  
+```Java
+(a) System.out.printf("%5d %d", 1,2,3); //there are too many items to match the format specifiers
+(b) System.out.printf("%5d %f", 1); // there are not enough items to match the format specifiers
+(c) System.out.printf("%5d %f", 1, 2); // 2 is not a floating-point number
+```
 
-
+## 4.24 Show the output of the following statements.  
+(a) System.out.printf("amount is %f %e\n", 32.32, 32.32);  --> amount is 32.320000 3.232000e+01  
+(b) System.out.printf("amount is %5.2%% %5.4e\n", 32.327, 32.32); --> amount is 32.33% 3.2330e+01   
+(c) System.out.printf("%6b\n", (1 > 2)); --> false   
+(d) System.out.printf("%6s\n", "Java"); -->   Java  
+(e) System.out.printf("%-6b%s\n", (1 > 2), "Java"); --> false Java  
+(f) System.out.printf("%6b%-8s\n", (1 > 2), "Java"); -->  falseJava      
 
 
 
