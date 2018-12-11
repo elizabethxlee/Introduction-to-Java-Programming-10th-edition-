@@ -151,6 +151,118 @@ do
 ```
 
 
+## 5.8 Do the following two loops result in the same value in sum?
+```
+for(int i = 0; i < 10; ++i){
+	sum += i;
+}
+```
+
+```
+for (int i = 0; i < 10; i++){
+	sum += i;
+}
+```
+Yes, the two loops result in the same value in sum;
+
+
+## 5.9 What are the three parts of a for loop control? Write a for loop that prints the numbers from 1 to 100.  
+(1) initial action
+(2) loop continuation condition
+(3) action after each iteration
+
+*(Liang, p. 171)*
+
+```
+for(int i = 1; i < 101; i++)
+{
+	System.out.println(i);
+}
+```
+
+
+## 5.10 Suppose the input is 2 3 4 5 0. What is the output of the following code?
+```Java
+import java.util.Scanner;
+
+public class Test{
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+
+		int number, sum = 0, count;
+
+		for(count = 0; count < 5; count++)
+		{
+			number = input.nextInt();
+			sum += number;
+		}
+		System.out.println("sum is " + sum);
+		System.out.println("count is " + count);
+	}
+}
+```
+The output is: 
+sum is 14
+count is 5
+
+
+## 5.11 What does the following statement do?
+```Java
+for ( ; ; )
+{
+	//Do something
+}
+```
+This creates an infinite loop.
+*(Liang, p. 172-173)*
+
+
+## 5.12 If a variable is declared in a for loop control, can it be used after the loop exits?
+No, the scope of the variable is only within the loop.
+
+
+## 5.13 Convert the following for loop statement to a while loop and to a do-while loop:
+```Java
+long sum = 0;
+for(int  i = 0; i <= 1000; i++)
+	sum = sum + i;
+```
+
+while loop:
+```Java
+long sum = 0;
+int i = 0;
+while (i <= 1000)
+{
+	sum += i;
+	i++;
+}
+```
+
+do while loop:
+```Java
+long sum = 0;
+int i = 0;
+do{
+	sum += i;
+	i++;
+} while (i <= 1000);
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
