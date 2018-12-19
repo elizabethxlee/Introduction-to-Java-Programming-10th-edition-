@@ -248,12 +248,148 @@ do{
 	sum += i;
 	i++;
 } while (i <= 1000);
+```
 
+
+## 5.14 Count the number of iterations in the following loops  
+(a)
+```Java
+int count = 0;
+while(count < n){
+	count++;
+}
+
+```
+The number of iterations is n times.
+
+(b)
+```Java
+for (int count = 0; count <=n; count++){
+
+}
+
+```
+The number of iterations is n+1 times.
+
+(c)
+```Java
+int count = 5;
+while(count < n){
+	count++;
+}
+
+```
+The number of iterations is n-5 times.
+
+
+(d)
+```Java
+int count = 5;
+while (count < n){
+	count = count + 3;
+}
+
+```
+The number of iterations is (n-5)/3 times.
+
+
+## 5.15 Can you convert a for loop to a while loop? List the advantages of using for loops.
+Yes, you can convert a for loop to a while loop.
+For loops have a pretest condition and they also limit the number of repetitions in advance.
+*(Liang, 174)*
+
+
+## 5.16 Can you always convert a while loop into a for loop? Convert the following while loop into a for loop.
+```Java
+int i = 1;
+int sum = 0;
+while(sum < 10000)
+{
+	sum = sum + i;
+	i++;
+}
+
+```
+Yes, a while loop can always be converted into a for loop. 
+*(Liang, p. 174)*
+```Java
+int sum = 0;
+for(int i = 1; sum < 10000; i++)
+{
+	sum = sum + i;
+}
 
 ```
 
 
+## 5.17 Identify and fix the errors in the following code:
+```Java
+public class Test {
+	public void main(String[] args) {
+		for (int i = 0; i < 10; i++); // semicolon should not be included at the end of for statement
+			sum += i;
 
+		if (i < j);	//semicolon should not be included at the end of if statement
+			System.out.println(i);
+		else
+				System.out.println(j);
+		while (j < 10);	//semicolon should not be included at the end of while statement
+		{				// inconsistent formatting
+			j++;
+		}
+		do {
+			j++;
+		} while(j < 10) //semicolon should be included after a do while statement
+	}
+}
+
+```
+corrected version
+```Java
+public class Test {
+	public void main(String[] args) {
+		for (int i = 0; i < 10; i++) 
+			sum += i;
+
+		if (i < j)	
+			System.out.println(i);
+		else
+				System.out.println(j);
+		while (j < 10){				
+			j++;
+		}
+		do {
+			j++;
+		} while(j < 10);
+	}
+}
+
+```
+
+
+## 5.18 What is wrong with the following programs?
+```Java
+public class ShowErrors{
+	public static void main(String[] args){
+		int i = 0;
+		do {
+			System.out.println(i + 4);
+			i++;
+		}
+		while(i < 10)
+	}
+}
+
+```
+
+```Java
+public class ShowErrors{
+	public static void main(String[] args){
+		for (int i = 0; i < 10; i++);
+			System.out.println(i + 4);
+	}
+}
+```
 
 
 
