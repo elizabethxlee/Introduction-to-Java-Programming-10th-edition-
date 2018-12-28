@@ -500,13 +500,141 @@ For 245, the loop body is executed twice, resulting in the hex number F5.
 For 3245, the loop body is executed three times, resulting in the hex number CAD.  
 
 
-## 5.24
+## 5.24 What is the keyword break for? What is the keyword continue for? Wll the following programs terminate? If so, give the output.  
+The keyword break is used to immediately terminate a loop.  
+The keyword continue is used to end the current iteration and go to the end of the loop body.  
+*(Liang, 184)*  
+
+```Java
+int balance = 10;
+while(true){
+	if(balance < 9)
+		break;
+	balance = balance - 9;
+}
+System.out.println("Balance is " + balance);
+
+```
+Yes, the program will terminate. The output is:  
+Balance is 1
+
+```Java
+int balance = 10;
+while(true){
+	if(balance < 9)
+		continue;
+	balance = balance - 9;
+}
+System.out.println("Balance is " + balance);
+```
+No, this program will not terminate.
 
 
+## 5.25 The for loop on the left is converted into the while loop on the right. What is wrong? Correct it.
+```Java
+int sum = 0;
+for(int i = 0; i < 4; i++){
+	if(i % 3 == 0) continue;
+	sum += i;
+}
+```
+converted to (wrong conversion)
+```Java
+int i = 0, sum = 0;
+while(i < 4){
+	if(i % 3 == 0) continue;
+	sum += i;
+	i++;
+}
+```
+The problem is that in the converted program, if i % 3 == 0, then you will be caught in an infinite loop. To correct it:
+```Java
+int i = 0, sum = 0;
+while(i < 4){
+	if(i % 3 == 0){
+		i++;
+		continue;
+	}
+	sum += i;
+	i++;
+}
+```
+
+## 5.26 Rewrite the programs TestBreak and TestContinue in Listings 5.12 and 5.13 without using break and continue.
+```Java
+//Listing 5.12 TestBreak rewritten
+public class TestBreak{
+	public static void main(String[] args){
+		int sum = 0;
+		int number = 0;
+
+		while(number < 20 && sum < 100){
+			number++;
+			sum += number;
+		}
+		System.out.println("The number is " + number);
+		System.out.println("The sum is " + sum);
+	}
+}
+
+```
+```Java
+//Listing 5.13 TestContinue rewritten
+public class TestContinue{
+	public static void main(String[] args){
+		int sum = 0;
+		int number = 0;
+
+		while(number < 20){
+			number++;
+			if(number != 10 && number != 11)
+				sum += number;
+		}
+		System.out.println("The sum is " + sum);
+	}
+}
+```
 
 
+## 5.27 After the break statement in (a) is executed in the following loop, which statement is executed? Show the output. After the continue statement in (b) is executed in the following loop, which statement is executed? Show the output.
 
+```Java
+for (int i = 1; i < 4; i++){
+	for (int j = 1; j <4; j++){
+		if (i * j > 2)
+			break;
 
+		System.out.println(i * j);
+	}
+	System.out.println(i);
+}
+```
+After the break statement, System.out.println(i * j) is executed. The output is:  
+1  
+2  
+1  
+2  
+2  
+3  
+
+```Java
+for (int i = 1; i < 4; i++){
+	for(int j = 1; j < 4; j++){
+		if (i * j > 2)
+			continue;
+
+		System.out.println(i * j);
+	}
+	System.out.println(i);
+}
+```
+After the continue statement is executed, System.out.println(i * j); is executed. The output is: 
+1  
+2  
+1  
+2  
+2  
+3  
 
 
 
