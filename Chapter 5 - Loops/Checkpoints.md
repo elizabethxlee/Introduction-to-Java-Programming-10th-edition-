@@ -376,7 +376,7 @@ public class ShowErrors{
 			System.out.println(i + 4);
 			i++;
 		}
-		while(i < 10)
+		while(i < 10) // Needs to include a semicolon at the end of this line
 	}
 }
 
@@ -385,23 +385,122 @@ public class ShowErrors{
 ```Java
 public class ShowErrors{
 	public static void main(String[] args){
-		for (int i = 0; i < 10; i++);
+		for (int i = 0; i < 10; i++); //Should not include a semicolon at the end of this line
 			System.out.println(i + 4);
 	}
 }
 ```
 
 
+## 5.19 How many times is the println statement executed?  
+```Java
+for(int i = 0; i < 10; i++)
+	for(int j = 0; j < i; j++)
+		System.out.println(i * j)
+```
+It is executed 45 times.
 
 
+## 5.20 Show the output of the following programs. (Hint: Draw a table and list the variables in the columsn to trace these programs.)
+```Java
+public class Test{
+	public static void main(String[] args){
+		for (int i = 1; i < 5; i++)
+			int j = 0;
+		while (j < i) {
+			System.out.print(j + " ");
+			j++;
+		}
+	}
+}
+
+```
+The output is 0 0 1 0 1 2 0 1 2 3 
+
+```Java
+public class Test{
+	public static viod main(String[] args){
+		int i = 0;
+		while (i < 5) {
+			for(int j = i; j > 1; j--)
+				System.out.print(j + " ");
+			System.out.println("****");
+			i++;
+		}
+	}
+}
+
+```
+The output is 
+****  
+****  
+2 ****  
+3 2 ****  
+4 3 2 ****  
+
+```Java
+public class Test{
+	public static void main(String[] args){
+		int i = 5;
+		while (i >=1){
+			int num = 1;
+			for (int j = 1; j <= i; j++){
+				System.out.print(num + "xxx");
+				num *= 2;
+			}
+			System.out.println();
+			i--;
+		}
+	}
+}
+```
+The output is 
+1xxx2xxx4xxx8xxx16xxx  
+1xxx2xxx4xxx8xxx  
+1xxx2xxx4xxx  
+1xxx2xxx  
+1xxx  
 
 
+```Java
+public class Test{
+	public static void main(String[] args){
+		int i = 1;
+		do{
+			int num = 1;
+			for(int j = 1; j <= i; j++){
+				System.out.print(num + "G");
+				num += 2;
+			}
+			System.out.println();
+			i++;
+		}while(i <= 5);
+	}
+}
+
+```
+The output is  
+1G  
+1G3G  
+1G3G5G  
+1G3G5G7G  
+1G3G5G7G9G  
 
 
+## 5.21 Will the program work if n1 and n2 are replaced by n1 / 2 and n2 / 2 in line 17 in Listing 5.9?  
+No, it will not work
 
 
+## 5.22 In Listing 5.11, why is it wrong if you change the code (char)(hexValue + '0') to hexValue + '0' in line 21?  
+By removing (char), there is a possibility of loss of precision.
 
 
+## 5.23 In Listing 5.11 how many times is the loop body executed for a decimal number 245 and how many times is the loop body executed for a decimal number 3245?  
+For 245, the loop body is executed twice, resulting in the hex number F5.  
+For 3245, the loop body is executed three times, resulting in the hex number CAD.  
+
+
+## 5.24
 
 
 
