@@ -31,9 +31,12 @@ public class TestMax {
 ```
 
 ## 6.4 True or false? A call to a method with a void return type is always a statement itself, but a call to a value-returning method cannot be a statement by itself. 
+False, although it is not done often, a value-returning can also be a statement by itself. 
+*(Liang, p. 206)*
 
 
 ## 6.5 What is the return type of a main method?  
+The main method is of type void meaning that the method does not return anything.
 
 ## 6.6 What would be wrong with not writing a return statement in a value-returning method? Can you have a return statement in a void method? Does the return statement in the following method cause syntax errors?
 ```Java
