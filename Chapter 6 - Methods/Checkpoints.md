@@ -145,11 +145,158 @@ public class Test
 
 ```
 
+## 6.11 How is an argument passed to a method? Can the argument have the same name as its parameter? 
+An argument is passed to a method by matching the parameters in order, number, and compatible type.
+The argument can have the same name as its parameter.
+*(Liang, p.212)* 
+
+## 6.12 Identify and correct the errors in the following program:
+```Java
+public class Test {
+	public static void main(String[] args) {
+		nPrintln(5, "Welcome to Java!");
+	}
+
+	public static void nPrintln(String message, int n) {
+		int n = 1;
+		for (int i = 0; i < n; i++)
+			System.out.println(message);
+	}
+}
+
+```
+corrected:
+```Java
+public class Test {
+	public static void main(String[] args) {
+		nPrintln("Welcome to Java!", 5); //switch the order of the arguments to match the parameters
+	}
+
+	public static void nPrintln(String message, int n) {
+		//get rid of declaration int n = 1; because it makes the parameter being passed in meaningless.
+		for (int i = 0; i < n; i++)
+			System.out.println(message);
+	}
+}
+```
 
 
+## 6.13 What is pass-by-value? Show the result of the following programs.  
+Pass-by-value is when you invoke a method with an argument py passing the value of an argument to the parameter. 
+(a)
+```Java
+public class Test {
+	public static void main(String[] args) {
+		int max = 0;
+		max(1, 2, max);
+		System.out.println(max);
+	}
+
+	public static void max(
+		int value1, int value2, int max) {
+		if (value1 > value2)
+			max = value1;
+		else
+			max = value2;
+	}
+}
+
+```
+Result: 
+0  
+
+(b)
+```Java
+public class Test {
+	public static void main(String[] args) {
+		int i = 1; 
+		while(i <= 6){
+			method1(i, 2);
+			i++;
+		}
+	}
+	public static void method1(int i, int num){
+		for(int j = 1; j <= i; j++) {
+			System.out.print(num + " ");
+			num *= 2;
+		}
+		System.out.println();
+	}
+}
+```
+Result:  
+2  
+2 4  
+2 4 8  
+2 4 8 16  
+2 4 8 16 32  
+2 4 8 16 32 64  
+
+(c) 
+```Java
+public class Test{
+	public static void main(String[] args) {
+		//Initialize times
+		int times = 3;
+		System.out.println("Before the call," + " variable times is " + times);
+
+		//Invoke nPrintln and display times
+		nPrintln("Welcome to Java!", times);
+		System.out.println("After the call, " + " variable times is " + times);
+	}
+
+		//Print the message n times
+	public static void nPrintln(String message, int n) {
+		while(n > 0) {
+			System.out.println("n = " + n);
+			System.out.println(message);
+			n--;
+		}
+	}
+}
+```
+Result:  
+Before the call, variable times is 3  
+n = 3  
+Welcome to Java!  
+n = 2  
+Welcome to Java!  
+n = 1  
+Welcome to Java!  
+After the call,  variable times is 3  
+
+(d)  
+```Java
+public class Test{
+	public static void main(String[] args) {
+		int i = 0;
+		while(i <= 4) {
+			method1(i);
+			i++;
+		}
+		System.out.println("i is " + i);
+	}
+	public static void method1(int i) {
+		do{
+			if(i % 3 != 0)
+			System.out.print(i + " ");
+		i--;
+		}
+		while(i >=1);
+		System.out.println();
+	}
+}
+```
+Result:  
+  
+1   
+2 1   
+2 1   
+4 2 1   
+i is 5  
 
 
-
+## 6.14 For (a) in the preceding question, show the contents of the activation records in the call stack just before the method max is invoked, just as max is entered, just before max is returned, and right after max is returned.
 
 
 
