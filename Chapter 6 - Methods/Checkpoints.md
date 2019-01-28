@@ -297,6 +297,75 @@ i is 5
 
 
 ## 6.14 For (a) in the preceding question, show the contents of the activation records in the call stack just before the method max is invoked, just as max is entered, just before max is returned, and right after max is returned.
+```Java
+public class Test {
+	public static void main(String[] args) {
+		int max = 0;
+		max(1, 2, max);
+		System.out.println(max);
+	}
+
+	public static void max(
+		int value1, int value2, int max) {
+		if (value1 > value2)
+			max = value1;
+		else
+			max = value2;
+	}
+}
+```
+before the max method is invoked:  
+  main method: max = 0  
+as max method is entered:  
+  main method: max = 0  
+  max method: max = 0    
+before max is returned:   
+  main method: max = 0   
+  max method: max = 2  
+after max is returned:  
+  main method: max = 0  
+
+
+## 6.15 What is method overloading? Is it permissible to define two methods that have the same name but different parameter types? Is it permissible to define two methods in a class that have identical method names and parameter lists but different return value types or different modifiers?  
+Method overloading is when you define methods with the same names but with different signatures.  
+It is permissible to define two methods that have the same name but different parameter types.  
+It is not permissible to define two methods in a class that have identical method names and parameter lists but different return value types or modifiers.
+*(Liang, p.221)*
+
+
+## 6.16 What is wrong in the following program?
+```Java
+public class Test {
+	public static void method(int x) {
+	}
+
+	public static int method(int y) {
+		return y;
+	}
+}
+```
+It is not permissible for methods to have identical names with the same parameters but with a different return value type.  
+
+
+## 6.17 Given two method definitions,
+```Java
+public static double m(double x, double y)
+public static double m(int x, double y)  
+```
+tell which of the two methods is invoked for:  
+a) double z = m(4, 5);  --> Second method  
+b) double z = m(4, 5.4); --> Second method  
+c) double z = m(4.5, 5.4); --> First method  
+
+## 6.18 What is a local variable?  
+A local variable is a variable defined inside a method.
+*(Liang, p. 222)*
+
+
+## 6.19 What is the scope of a local variable?  
+The scope of a local variable starts from its declaration and continues to the end of the block that contains the variable.  
+*(Liang, p. 222)*  
+
 
 
 
